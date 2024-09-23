@@ -92,7 +92,20 @@ section > p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(94, 63, 122);
+}
+.back {
+    background-color: rgb(113, 82, 143);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trab {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px 0;
 }
 .trabalhos .cont .trab {
     background-color: rgb(72, 57, 209);
@@ -103,10 +116,11 @@ section > p {
 .trab h3 {
     margin: 5px 0 5px 0;
     text-align: center;
-    color: white;
+    color: rgb(223, 33, 0);
 }
 .trab img{
-    width: 100%;
+    width: 90%;
+
 }
 .trab .icon {
     text-align: center;
@@ -115,7 +129,7 @@ section > p {
 
 }
 .icon i {
-    margin: 0 30px 0 30px;
+    margin: 0 15px 0 15px;
 }
 footer p{
     margin: 0;
