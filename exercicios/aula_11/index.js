@@ -74,6 +74,13 @@ function pesquisarTarefas(){
         lis.forEach(li =>  {
             if(!li.children[0].innerText.includes(busca.value)){
                 li.classList.add('oculto');
+
+                if(!li.children[1].innerText.includes(busca.value)){
+                    li.classList.add('oculto');
+                }else{
+                    li.classList.remove('oculto');
+                }
+                
             }else{
                 li.classList.remove('oculto');
             }
