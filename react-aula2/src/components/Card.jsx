@@ -5,7 +5,7 @@ const Card = ({imagem, title, category, paragraph, tipo}) => {
                 <img src={imagem} alt={title} />
                 <h2>{title}</h2>
                 {
-                    tipo == "A" ? (
+                    tipo == "A" && (
                         <>
                             <h6>{category}</h6>
                             <p>{paragraph}</p>
