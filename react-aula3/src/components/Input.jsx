@@ -21,4 +21,4 @@ const Input = () => {
 
 export default Input;
 
-/*hoo exemplo de useState*/
+/*hooks exemplo de useState*/
