@@ -2,8 +2,10 @@ import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { Context } from '../contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
         
         
 const Login = () => {
@@ -12,8 +14,15 @@ const Login = () => {
 
     const { register, handleSubmit} = useForm();
 
+    const { setLogado } = useContext(Context)
+
+    const navigate = useNavigate()
+
     function logar (dados){
-        console.log(dados);
+        if(dados.email == "pedrosimaocontato@gmail.com" && dados.senha == "123456"){
+            setLogado(true);
+            navigate('/home')
+        }
     }
  
     return (
