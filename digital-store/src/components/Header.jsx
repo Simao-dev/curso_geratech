@@ -1,12 +1,17 @@
+import Logo from "../assets/logo.png"
+
 const Header = () => {
     return ( 
         <>
-            <ul>
-                <li>Home</li>
-                <li>Produtos</li>
-                <li>Cetegorias</li>
-                <li>Meus Produtos</li>
-            </ul>
+            <div>
+                <img src={Logo} alt="" />
+                <ul>
+                    <li>home</li>
+                    <li>Produtos</li>
+                    <li>Cetegorias</li>
+                    <li>Meus Produtos</li>
+                </ul>
+            </div>
         </>
      );
 }

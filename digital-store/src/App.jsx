@@ -1,13 +1,11 @@
-import Header from "./components/Header"
-import Logo from "./components/Logo"
+import Header from "./components/Header";
 
-const Home = () => {
-  return ( 
+const App = () => {
+  return(
     <>
-      <Logo />
-      <Header />
+      < Header/>
     </>
-   );
+  );
 }
- 
-export default Home;
+
+export default App;
