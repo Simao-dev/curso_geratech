@@ -3,6 +3,9 @@ import Logo from "../assets/logo.png"
 import 'primeicons/primeicons.css';
 import '/node_modules/primeflex/primeflex.css'
 import { Button } from 'primereact/button';
+import { IconField } from 'primereact/iconfield';
+import { InputIcon } from 'primereact/InputIcon';
+import { InputText } from 'primereact/InputText'
 const Header = () => { 
     return ( 
         <>
@@ -11,13 +14,17 @@ const Header = () => {
                 
                     <img className="w-13rem h-3rem"src={Logo} alt="" />
                 
-                    <div>
-                        <input type="text" placeholder="Pesquisar produto..."  className="pi pi-search w-30rem h-4rem" />
-                        <span className="pi pi-search"></span>
+                    <div className="flex gap-3">
+                        <IconField iconPosition="right">  
+                            <InputText className="w-30rem h-4rem border-none border-round-xl " style={{ backgroundColor: '#f8f8f8'}} placeholder=" Pesquisar produto..." />
+                            <InputIcon className="pi pi-search"style={{ fontSize: '2rem', color:'#afafaf'}}> </InputIcon>
+                        </IconField>
                     </div>
                     <p>Cadastre-se</p>
-                        <Button label="Submit" />
-                    <span className="pi-shopping-cart"></span>
+                        <div>
+                            <Button label="Entrar" className="w-7rem h-3rem border-round-2xl text-white border-none" style={{backgroundColor:'#c92071'}}/>
+                        </div>
+                        <span><i className="pi pi-cart-plus" style={{ fontSize: '2rem', color:'#c92071'}}></i></span>
                 </div>
                 <div>
                     <ul className="carde flex list-none	gap-8 pl-8">
