@@ -5,7 +5,8 @@ import '/node_modules/primeflex/primeflex.css'
 import { Button } from 'primereact/button';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/InputIcon';
-import { InputText } from 'primereact/InputText'
+import { InputText } from 'primereact/InputText';
+import { NavLink } from "react-router-dom";
 const Header = () => { 
     return ( 
         <>
@@ -28,10 +29,10 @@ const Header = () => {
                 </div>
                 <div>
                     <ul className="carde flex list-none	gap-8 pl-8">
-                        <li>home</li>
-                        <li>Produtos</li>
-                        <li>Cetegorias</li>
-                        <li>Meus Produtos</li>
+                        <li><NavLink to={"/"}>Home</NavLink></li>
+                        <li><NavLink to={"/"}>Produtos</NavLink></li>
+                        <li><NavLink to={"/"}>Cetegorias</NavLink></li>
+                        <li><NavLink to={"/"}>Meus Produtos</NavLink></li>
                     </ul>
                 </div>
             </div>
