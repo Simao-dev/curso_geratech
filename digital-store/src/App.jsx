@@ -1,11 +1,12 @@
-import Header from "./components/Header";
+import Rotas from "../Rotas/Rotas"
 
-const App = () => {
-  return(
-    <>
-      < Header/>
-    </>
-  );
+function App() {
+
+  return (
+    <div >
+      <Rotas />
+    </div>
+  )
 }
 
 export default App;
