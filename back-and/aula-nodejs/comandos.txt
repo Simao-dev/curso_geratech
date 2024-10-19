@@ -1,0 +1,3 @@
+node -v (verifica se esta instalado e qual a versão)
+npm -v (verfica a versão do npm)
+npm init -y (cria um arquivo de configuração do projeto)
