@@ -4,6 +4,10 @@ const host = 'localhost'
 const port = 3000;
 //http://localhost:3000
 
+const produtos = [
+
+];
+
 
 const app = createServer((resquest, response) => {   
 
