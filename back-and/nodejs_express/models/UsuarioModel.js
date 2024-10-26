@@ -1,9 +1,15 @@
 class UsuarioModel {
 
     static lista = [
-        {
+        {   
+            id: 1,
             nome: "pedro",
             login: "admin"
+        },
+        {   
+            id: 2,
+            nome: "test",
+            login: "test"
         }
     ]
      
@@ -11,23 +17,23 @@ class UsuarioModel {
         return UsuarioModel.lista;
     }
 
-    static consultarPorid() {
-
+    static consultarPorid(id) {
+        const dados = UsuarioModel.lista.filter(item => item.id == id);
+        return dados;
     }
 
-    static criar() {
-        UsuarioModel.lista.push({
-            nome: "Maria",
-            login: "Mari"
-        })
+    static criar(data) {
+        UsuarioModel.lista.push(data)
     }
 
-    static atualizar() {
-
+    static atualizar(id, data) {
+        const indice = UsuarioModel.lista.findIndex(item => item.id == id);
+        UsuarioModel.lista[indice] = data;
     }
 
-    static deletar() {
-
+    static deletar(id) {
+        const dados = UsuarioModel.lista.filter(item => item.id != id);
+        UsuarioModel.lista = dados;
     }
 
 

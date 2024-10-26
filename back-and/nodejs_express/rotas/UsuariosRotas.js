@@ -8,7 +8,8 @@ const usuariosController = new UsuariosController();
 //CRUD
 
 UsuariosRotas.get('/users', usuariosController.listar);
+UsuariosRotas.get('/users/:id', usuariosController.consultarPorid);
 UsuariosRotas.post('/users', usuariosController.criar)
-UsuariosRotas.put('/users', usuariosController.atualizar)
-UsuariosRotas.delete('/users', usuariosController.deletar)
+UsuariosRotas.put('/users/:id', usuariosController.atualizar)
+UsuariosRotas.delete('/users/:id', usuariosController.deletar)
 module.exports = UsuariosRotas;
