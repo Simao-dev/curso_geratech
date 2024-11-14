@@ -4,7 +4,7 @@ class Pessoa {
     //atributos
     nome = '';
     cpf = '';
-     idade = '';
+    idade = '';
    
 
     constructor (nome, cpf, idade) {
@@ -35,3 +35,6 @@ const pessoaAux = pessoaClasse1;
 
 //pessoaAux = x01937495;
 pessoaAux.nome = 'Alice'
+
+//ENDEREÇO.
+// RUA FULANO DE TAL, N 1010 - FORTAL
