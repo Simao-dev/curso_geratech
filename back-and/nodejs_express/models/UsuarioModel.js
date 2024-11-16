@@ -4,17 +4,20 @@ class UsuarioModel {
         {   
             id: 1,
             nome: "pedro",
-            login: "admin"
+            login: "admin",
+            senha: "123123"
         },
         {   
             id: 2,
             nome: "test",
-            login: "test"
+            login: "test",
+            senha: "123123"
         }
     ]
      
-    static listar() {
-        return UsuarioModel.lista;
+    static authenticate(login, senha) {
+        const indice = UsuarioModel.lista.findIndex(item => item.login === login && item.senha === senha);
+        return UsuarioModel.lista[indice];
     }
 
     static consultarPorid(id) {
