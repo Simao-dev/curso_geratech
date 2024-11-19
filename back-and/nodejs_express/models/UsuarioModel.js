@@ -20,6 +20,10 @@ class UsuarioModel {
         return UsuarioModel.lista[indice];
     }
 
+    static listar() {
+        return UsuarioModel.lista;
+    }
+
     static consultarPorid(id) {
         const dados = UsuarioModel.lista.filter(item => item.id == id);
         return dados;
